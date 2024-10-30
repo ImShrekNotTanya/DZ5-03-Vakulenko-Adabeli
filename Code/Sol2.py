@@ -1,6 +1,5 @@
 # Код позволяет пользователю выбрать блюдо из списка и отображает информацию о выбранном блюде.
 
-
 # Импортируемые библиотеки
 import sys
 
@@ -30,7 +29,6 @@ class FoodApp(QWidget):
         # Заголовок
         self.label_title = QLabel("Выберите блюдо:")
         self.label_title.setStyleSheet("font-size: 12px; color: black;")  # Установка цвета и размера шрифта
-
 
         # Список блюд
         self.food_list = QListWidget()
@@ -62,7 +60,6 @@ class FoodApp(QWidget):
         dish_name = item.text()
         # Здесь можно добавить логику для получения информации о блюде
         QMessageBox.information(self, "Информация о блюде", f"Вы выбрали: {dish_name}")
-
 
 # Запуск приложения
 if __name__ == '__main__':
